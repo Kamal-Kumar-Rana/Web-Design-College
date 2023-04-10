@@ -1,0 +1,114 @@
+<!--
+24/03/2023
+
+1. Swaping two no's using third variable and without third variable
+2.Calculate the area of triangle (right angle &General)
+
+3.Find the largest no among three no using ternary oparators
+4. Check even or odd
+5. Check prime or not
+6. Perform all arithmetic oparation using switch case
+-->
+<!--
+28/03/2023
+
+1. Convert kilometer to mile(Using Js DOM Function) in a interactive way
+2. Convert celcius to faharenhight(Using Js DOM Function) in a interactive way
+H/W------------
+
+1. Km to mile converter or temperatior
+2.Grade Calculation
+
+
+-->
+<html>
+    <head>
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        <style>
+            #first, #second{
+                display: flex;
+                
+            }
+            .part{
+                padding-left: 2%;
+                padding-top: 2%;
+            }
+        </style>
+        <div id="first">
+
+            <div class="part">
+                <input type="text" id="n1" placeholder="Enter First Number">
+            </div>
+            <div class="part">
+                <input type="text" id="n2" placeholder="Enter Second Number">
+            </div>
+         
+        </div>
+        <div id="second">
+            <div class="part">
+                <input type="text" id="op" oninput="calculate()" placeholder="Enter The Operator(+,-,*,/,%)">
+            </div>
+            <div class="part">
+                <input type="text" id="res" placeholder="Result">
+            </div>
+            <div>
+                <input type="submit" name="" id="">
+            </div>
+
+        </div>
+
+
+        <script>
+            function calculate(){
+            let operator=document.getElementById("op").value
+            let n1=Number(document.getElementById("n1").value)
+            let n2=Number(document.getElementById("n2").value)
+switch(operator){
+   
+     case "+":
+document.getElementById("res").value=n1+n2
+break
+case "-":
+document.getElementById("res").value=n1-n2
+break
+case "*":
+document.getElementById("res").value=n1*n2
+break
+case "/":
+document.getElementById("res").value=n1/n2
+break
+case "%":
+document.getElementById("res").value=n1%n2
+break;
+default:
+document.getElementById("res").value="Undefine"
+
+}
+            }
+            
+
+
+
+/*let a=10
+let b=20
+b=b-a
+a=a+b
+console.log(a,b)
+
+let x,y
+x=prompt("Enter the first number: ")
+y=prompt("Enter the the second number:");
+document.write("Before Swaping: ",x,"  ",y);
+let temp=x
+x=y
+y=temp
+document.write(" After Swaping: ",x,"  ",y);*/
+</script>
+        <!--<script src="/Program.js"></script>-->
+
+    </body>
+</html>

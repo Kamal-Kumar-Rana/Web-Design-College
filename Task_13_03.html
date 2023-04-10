@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <!--    Format of onClick= (form_name.textbox_name.value_of_input) 
+        
+        -->
+     <center>
+       
+            
+      
+    <form name="col" >
+        <div>
+    <input type="textbox" placeholder="Answer" name="ans">
+        </div>
+    <div>
+        <input type="button" value="7" onclick="col.ans.value+='7'">
+        <input type="button" value="8" onclick="col.ans.value+='8'">
+        <input type="button" value="9" onclick="col.ans.value+='9'">
+        <input type="button" value="/" onclick="col.ans.value+='/' ">
+    </div>
+    <div>
+        <input type="button" value="4" onclick="col.ans.value+='4'">
+        <input type="button" value="5" onclick="col.ans.value+='5'">
+        <input type="button" value="6" onclick="col.ans.value+='6'">
+        <input type="button" value="*" onclick="col.ans.value+='*' ">
+    </div>
+    <div>
+        <input type="button" value="1" onclick="col.ans.value+='1'">
+        <input type="button" value="2" onclick="col.ans.value+='2'">
+        <input type="button" value="3" onclick="col.ans.value+='3'">
+        <input type="button" value="-" onclick="col.ans.value+='-' ">
+    </div>
+    <div>
+        <input type="button" value="0" onclick="col.ans.value+='0'">
+        <input type="button" value="." onclick="col.ans.value+='.'">
+        <input type="button" value="=" onclick="col.ans.value=eval(col.ans.value)">
+        <input type="button" value="+" onclick="col.ans.value+='+' ">
+    </div>
+    <div><input type="reset"></div>
+    
+
+</form>
+</center>
+
+</body>
+</html>

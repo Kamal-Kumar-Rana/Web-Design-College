@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <style>
+            #main{
+                border: 2px solid black;
+                margin-right: 65%;
+                padding-top: 10px;
+                padding-left:10px;
+                background-color: aqua;
+            }
+            body{
+                padding-left: 40%;
+            }
+        </style>
+           
+                <div id="main">
+        <div>
+            <label for="">Kilometer to Mile Conversion</label>
+            <input id="data1" type="number" placeholder="Enter KM" step="any">
+            <button onclick="convertKMToMile()">Convert</button>
+        </div>
+        <div>
+            <p>Value in mile:</p>
+        <p id="ans1"> </p>
+        </div>
+
+        <div>
+            <label for="">Mile to Kilometer Conversion</label>
+            <input id="data2" type="number" placeholder="Enter Mile" step="any">
+            <button onclick="convertMileToKM()" >Convert</button>
+        </div>
+        <div>
+            <p>Value in Kilometer:</p>
+        <p id="ans2"> </p>
+        </div>
+                </div>
+       
+
+
+
+        <script src="/JavaScript/Task_28_03.js"></script>
+    </body>
+</html>

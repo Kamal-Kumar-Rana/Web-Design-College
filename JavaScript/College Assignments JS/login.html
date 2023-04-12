@@ -1,0 +1,82 @@
+
+<html>
+<head>
+    <title></title>
+</head> 
+<body>
+    <style>
+        #main{
+            
+            margin-left: 30%;
+            margin-right: 35%;
+            margin-top: 10%;
+            padding-left: 10%;
+            background-color: aliceblue;
+        }
+        .box{
+            padding-top: 10%;
+            padding-bottom: 5%;
+            
+        }
+        body{
+            background-color: rgb(82, 82, 236);
+        }
+
+    </style>
+    
+   <div id="main">
+    <h3>Login</h3>
+<form action="Success.html" onsubmit="return validate()">
+    <div class="box"><input type="text" id="user" placeholder="Username"  ></div>
+    <div class="box"><input type="password" id="pass" placeholder="Password" ></div>
+    <div class="box"><button type="submit"  >SUBMIT</button></div>
+
+
+
+
+
+
+</form>
+</div>
+<script>
+function validate(){
+var username=document.getElementById('user').value;
+var password=document.getElementById('pass').value;
+
+if(username=="" && password==""){
+    alert("Empty Field")
+    return false;
+
+
+}
+else{
+if(username.length<8 && password.length<8)
+{
+    alert("Please Enter the username and password length minimum 8 character")
+    return false
+}
+else{
+    if(username=="kamal1234" && password=="12345678"){
+        return true;
+        }
+        else{
+            alert("Please enter correct username and password!")
+            return false;
+        }
+}
+
+/*if(username=="kamal" && password=="1234"){
+return true;
+}
+else{
+    alert("Please enter correct username and password!")
+    return false;
+}*/
+
+}
+}
+
+
+</script>
+</body>
+</html>

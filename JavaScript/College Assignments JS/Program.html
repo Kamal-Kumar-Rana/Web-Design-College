@@ -32,6 +32,7 @@ H/W------------
             #first, #second{
                 display: flex;
                 
+                
             }
             .part{
                 padding-left: 2%;
@@ -41,22 +42,27 @@ H/W------------
         <div id="first">
 
             <div class="part">
+                <label for="">Enter First Number:</label>
                 <input type="text" id="n1" placeholder="Enter First Number">
             </div>
             <div class="part">
+                <label for="">Enter Second Number:</label>
                 <input type="text" id="n2" placeholder="Enter Second Number">
             </div>
          
         </div>
         <div id="second">
             <div class="part">
-                <input type="text" id="op" oninput="calculate()" placeholder="Enter The Operator(+,-,*,/,%)">
+                <label for="">Enter The Operator</label>
+                <input type="text" id="op"  placeholder="(+,-,*,/,%)">
             </div>
             <div class="part">
                 <input type="text" id="res" placeholder="Result">
+                
+                <button  onclick="calculate()">Answer</button>
             </div>
             <div>
-                <input type="submit" name="" id="">
+                
             </div>
 
         </div>
@@ -93,7 +99,7 @@ document.getElementById("res").value="Undefine"
 
 
 
-/*let a=10
+let a=10
 let b=20
 b=b-a
 a=a+b
@@ -106,7 +112,7 @@ document.write("Before Swaping: ",x,"  ",y);
 let temp=x
 x=y
 y=temp
-document.write(" After Swaping: ",x,"  ",y);*/
+document.write(" After Swaping: ",x,"  ",y);
 </script>
         <!--<script src="/Program.js"></script>-->
 

@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        
+        <title>Grade Calculator</title>
+    </head>
+    <body>
+   
+            
+<style>
+  body{
+  margin-left: 30%;
+}
+#main{
+display: flex;
+border: 2px solid black;
+margin-right: 50%;
+background-color:cyan;
+}
+.part{
+padding-left: 2%;
+padding-top: 3%;
+}
+</style>
+ 
+        <h1>Grade Calculator</h1>
+        <p>Enter your marks and total marks to calculate your grade:</p>
+        <div id="main">
+            <div>
+                <div class="part"><label >Paper1:</label>
+                    <input type="text" id="p1" name="p1"></div>
+                <div class="part"><label >Paper2:</label>
+                    <input type="text" id="p2" name="p2"></div>
+                <div class="part"><label >Paper3:</label>
+                    <input type="text" id="p3" name="p3" ></div>
+                <div class="part"><label >Paper4:</label>
+                    <input type="text" id="p4" name="p4" ></div>
+                <div class="part"><label >Paper5:</label>
+                    <input type="text" id="p5" name="p5" ></div>
+
+            </div>
+            <div>
+                
+                <div class="part"><label for="total">Total Marks:::: </label>
+                    <input type="text" id="total" name="total"></div>
+                   
+                <div class="part"> 
+                  <p>Obtain Marks:<span id="marks"></span></p>
+                    <p>Your Percentage is: <span id="percentage"></span></p>
+                    <p>Your grade is: <span id="grade"></span></p>
+                    <button onclick="calculateGrade()">Calculate</button>
+                 </div>
+
+            </div>
+        </div>
+        <script src="/JavaScript/Task_28_03.js"></script>
+    
+    </body>
+</html>

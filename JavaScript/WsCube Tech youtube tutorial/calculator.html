@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <input type="number" id="1st" step="any">
+        
+        <select name="" id="op">
+            <option value="0">Select</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+    <input type="number" id="2nd" step="any">
+    <button onclick="cal()" >Answer</button>
+    <br>
+    <div id="view">
+
+    </div>
+
+    <script>
+function cal(){
+    var n1=parseInt( document.getElementById('1st').value)
+    var n2=parseInt( document.getElementById('2nd').value)
+   var op=document.getElementById('op').value
+   switch(op){
+   
+case "+":
+document.getElementById("view").innerHTML=(n1+n2)
+
+break
+case "-":
+document.getElementById("view").innerHTML=(n1-n2)
+break
+case "*":
+document.getElementById("view").innerHTML=(n1*n2)
+break
+case "/":
+document.getElementById("view").innerHTML=(n1/n2)
+break
+case "%":
+document.getElementById("view").innerHTML=(n1%n2)
+break;
+default:
+document.getElementById("view").innerHTML="Select a valid Oparator"
+
+}
+
+   
+
+
+}
+    </script>
+
+
+    </body>
+</html>

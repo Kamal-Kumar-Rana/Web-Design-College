@@ -8,12 +8,18 @@
 </head>
 <body>
     <input type="text" id="name" name="name" placeholder="Your Name">
-    <button onclick="greet()">Press</button>
-    <div class="greet">
+    <button onclick="greet()"><b>Press</b></button>
+    <div class="greet"></div>
+    
 
-    </div>
+
+
+
+
+
     <script>
 function greet(){
+    
     var n="Hello! "+document.getElementById('name').value
     alert(n)
     document.getElementsByClassName('greet')[0].innerHTML="<h1>"+n+"</h1>"

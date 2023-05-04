@@ -9,6 +9,38 @@
 <body>
   <script>
 // 1. For loop----------------->
+for(var count=10;count>=0;count--){
+    document.write("<b><i>"+"Hello!"+count+"<br/>"+"</i></b>")
+}
+document.write("Lunch Successfully!"+"<br/>")
+
+
+// 2. While loop--------------->
+var i=0
+while(i<10){
+    document.write("<i>"+"Hello!"+i+"<br/>"+"</i>")
+    i++
+
+}
+// 3. forEach loop--------------> forEach loop is a method to get data from js array or object.
+
+var cars=["car1","car2","car3","car4","car5"]
+cars.forEach(after)
+function after(item,index,arr){
+    //document.write(index+"=> "+item+"<br/>")
+    document.write([index]=item+"0"+"<br/>")
+    
+
+}
+/*for(var i =1;i<=10;i++){
+    if(i%2!=0){
+        continue
+    }
+    if(i==8){
+        break
+    }
+    document.write(i+"<br/>")
+}*/
 
   </script>  
 </body>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort Random Elements</title>
+	
+</head>
+<body>
+    <style>
+		#input {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: none;
+			border-bottom: 2px solid black;
+		}
+		button {
+			background-color:darkgreen;
+			color: white;
+			padding: 10px;
+           
+			margin: 8px 42%;
+			border: none;
+			cursor: pointer;
+			width: 100px;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+        body{
+            border: 2px black solid;
+            margin: 10%;
+            padding: 30px;
+        }
+        
+        #header{
+            background-color: aqua;
+            height: 50px;
+            text-align: center;
+            width: 100%;
+            
+        }
+	</style>
+    <div id="header"><h1>Sort Random Elements</h1></div>
+	
+	<form>
+		<label >Enter random Elements (With Comma Separated):</label>
+		<input type="text" id="input" placeholder="Separate Elements With Commas">
+		<button type="button" onclick="sortElements()">Sort</button>
+	</form>
+	<h3>Sorted elements:</h3>
+	<ul id="output"></ul>
+	<script>
+		function sortElements() {
+			var input = document.getElementById("input").value;
+			var elements = input.split(",");
+         
+			
+            elements.sort();
+           
+			var output= document.getElementById("output")
+            output.innerHTML="[ "+elements+ " ]";
+			/*for (var i = 0; i < elements.length; i++){
+                output.innerHTML+="<li>"+elements[i]+"</li>"
+            }*/
+			/*for (var i = 0; i < elements.length; i++) {
+				var li = document.createElement("li");
+				var text = document.createTextNode(elements[i]);
+				li.appendChild(text);
+				output.appendChild(li);
+			}*/
+		}
+	</script>
+</body>
+</html>

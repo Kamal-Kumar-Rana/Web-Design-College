@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <!-- date- 13/04/23  task -clock HH:MM:SS--> 
+    <center>
+    <div id="clock"></div>
+    <button onclick="display()"><b><i>Digital Clock</i></b></button>
+</center>
+<script>
+    function display(){
+        
+var d=new Date();
+var h=d.getHours();
+var m=d.getMinutes();
+var s=d.getSeconds()
+
+
+var phase = (h >= 12 ? ' PM' : ' AM');
+h = h % 12;
+
+h = h ? h : 12;
+
+m = m < 10 ? '0' + m : m;
+s=((s<10)?("0"+s):(s))
+
+
+
+/*if(h==0){
+    h=12
+    if(h>12){
+        h=h-12
+        phase="PM"
+    }
+    h=((h<10)?("0"+h):(h))
+s=((s<10)?("0"+s):(s))
+m=((m<10)?("0"+m):(m))
+}
+*/
+
+
+setTimeout(display,1000)
+document.getElementById('clock').innerHTML="<b><i>"+h+":"+m+":"+s+phase+"</i></b>"
+    }
+    
+</script>
+
+</body>
+</html>

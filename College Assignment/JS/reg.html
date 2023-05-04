@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <form >
+            <fieldset>
+                <center>
+                    <h1>Login Page</h1>
+               
+                <label for="txtfirstname">First Name:</label>
+                <input type="text" id="txtfirstname"><br>
+                <label for="txtlastname">Last Name:</label>
+                <input type="text" id="txtlastname"><br>
+                <label for="txtphno">Ph. No:</label>
+                <select name="country_code" id="country_code">
+                    <option value="+91">+91 (India)</option>
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (UK)</option>                  
+                </select>
+                <input type="number" id="txtphone"><br>
+                <label for="txtemailid">Email Id:</label>
+                <input type="text" id="txtemailid"><br>
+                <label for="txtdob">D.O.B:</label>
+                <input type="date" id="txtdob"><br>
+                <label for="txtadd">Address:</label>
+                <textarea name="" id="txtadd" cols="10" rows="0"></textarea><br>
+                <label for="txths">Marks(HS):</label>
+                <input type="number" id="txths"><br>
+                <label for="txtdept">Department:</label>
+                <input type="radio" id="txtdept">
+                <label for="cse">CSE</label>
+                <input type="radio" id="txtdept">
+                <label for="ec">EC</label>
+                <input type="radio" id="txtdept">
+                <label for="ee">EE</label>
+                <input type="radio" id="txtdept">
+                <label for="me">ME</label><br>
+                <label for="course">Course:</label>
+                <select id="course">
+                    <option value="Degree">Degree</option>
+                    <option value="Diploma">Diploma</option>
+                </select><br>
+                <label for="photo">Photo</label>
+                <input type="file"><br>
+                <label for="bloodgroup">Blood Group</label>
+                <select id="course">
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                </select><br>
+                <label for="favbook">Favorite Food:</label>
+                <input type="checkbox" name="chinese" id="chinese">
+                <label for="chinese">Chinese</label>
+                <input type="checkbox" name="italian" id="italian">
+                <label for="chinese">Italian</label>
+                <input type="checkbox" name="indian" id="indian">
+                <label for="chinese">Indian</label><br>
+
+                <label for="favbook">Favorite Sports:</label>
+                <input type="checkbox" name="football" id="football">
+                <label for="chinese">Football</label>
+                <input type="checkbox" name="cricket" id="cricket">
+                <label for="chinese">Cricket</label>
+                <input type="checkbox" name="hockey" id="hockey">
+                <label for="chinese">Hockey</label><br>
+
+                <label for="color">Favorite color:</label>
+                <input type="color" name="color" id="color"><br>
+
+                <button>Reset</button><button onclick="validate()">Submit</button>
+                <script src="/College Assignment/JS/reg.js"></script>
+
+            </fieldset>
+        </center>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Generate a list of random elements
+let elements = [];
+for (let i = 0; i < 10; i++) {
+  elements.push(Math.floor(Math.random() * 100));
+}
+
+// Sort the list using Array.sort()
+elements.sort((a, b) => a - b);
+
+// Print out the sorted list
+alert(elements);
+
+
+    </script>
+</body>
+</html>

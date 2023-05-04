@@ -53,7 +53,44 @@ padding-top: 3%;
 
             </div>
         </div>
-        <script src="/JavaScript/Task_28_03.js"></script>
+       <script >
+        function calculateGrade() {
+
+    
+            let p1=Number(document.getElementById("p1").value)
+            let p2=Number(document.getElementById("p2").value)
+            let p3=Number(document.getElementById("p3").value)
+            let p4=Number(document.getElementById("p4").value)
+            let p5=Number(document.getElementById("p5").value)
+          
+            const marks =(p1+p2+p3+p4+p5)
+         
+            document.getElementById("marks").textContent=marks;
+            const total = Number(document.getElementById("total").value);
+            const percentage = (marks / total) * 100;
+            document.getElementById("percentage").textContent=percentage;
+            
+            let grade;
+            if (percentage >= 90) {
+              grade = "A+";
+            } else if (percentage >= 80) {
+              grade = "A";
+            } else if (percentage >= 70) {
+              grade = "B+";
+            } else if (percentage >= 60) {
+              grade = "B";
+            } else if (percentage >= 50) {
+              grade = "C";
+            } else {
+              grade = "D";
+            }
+            
+            document.getElementById("grade").textContent = grade;
+           
+          }
+    
+
+       </script>
     
     </body>
 </html>

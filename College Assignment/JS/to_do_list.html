@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+</div>
+<style>
+    #header{
+        background-color: aqua;
+        height: 100px;
+        text-align: center;
+        width: 1000px;
+        
+        
+    }
+    #main{
+        border: 2px solid black;
+        width: 200px;
+        height: 100px;
+        border-radius: 2px;
+        margin-left: 35%;
+        /*padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 25px;*/
+        background-color: rgb(228, 238, 237);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    padding:20px 0px 55px 20px ;
+    }
+    #btn{
+        padding: 25px;
+        padding-top: 20px;
+        
+    }
+    button{
+        background-color: rgb(12, 187, 12);
+        color: white;
+        height: 30px;
+        border: 2px solid black;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 30%;
+    }
+ 
+    body{
+        border: solid 2px black;
+        width: 1000px;
+        margin-left: 13%;
+    }
+    input{
+        padding-top: 10px;
+        margin-top: 25px;
+    }
+    #lbl{
+        padding: 45px;
+        font-size:larger;
+        font-family:Arial;
+    }
+    #list{
+        color:green;
+        font-size: large;
+        padding-left: 45%;
+    }
+    h2{
+        padding-left: 42%;
+    }
+
+
+</style>
+<div id="header"><h1>To do list!</h1></div>
+
+<div id="main">
+<div>
+    <input type="text" id="ip">
+    <button type="submit" onclick="add()">Add</button>
+</div>
+
+
+</div>
+<h2 >List</h2>
+<div id="list">
+    
+</div>
+<script>
+  function add()  {
+
+/*var e=document.getElementById('ip').value;
+document.getElementById('res').innerHTML="<ul><li>"+e+"</li></ul>"*/
+let ib=document.getElementById('ip').value
+let mylist=document.getElementById('list')
+if(ib==""){
+    alert("Empty! Please Write Something!")
+}
+else{
+let todo=document.createElement('li')
+todo.innerHTML=ib+'<input type="button" class="del" value="delete" onclick="delet(this)"></input>';
+mylist.appendChild(todo)
+    
+}
+//ib="";
+SaveData();
+  }
+
+  function SaveData(){
+    localStorage.setItem("data",list.innerHTML)
+  }
+</script>
+</body>
+</html>

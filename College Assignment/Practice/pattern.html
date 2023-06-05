@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <div id="res" style="padding-left:10%;"></div>
+        <script>
+           function add(){
+                var size=5;
+                var char="*";
+                document.getElementById("res").innerHTML=""
+                for (var i = 1; i <= size; i++) {
+                    var pattern = "";
+                    for (var j = 1; j <= size - i; j++) {
+                        pattern += " ";
+                    }
+                    for (var k = 0; k <((2*i) - 1); k++) {
+                        pattern += "*";
+                    }
+                    document.getElementById("res").innerHTML+=pattern+"<br>"
+                }
+                
+                for (var i = size - 1; i >= 1; i--) {
+                    var pattern = "";
+                    for (var j = 1; j <= size - i; j++) {
+                        pattern += " ";
+                    }
+                    for (var j = 1; j <= i * 2 - 1; j++) {
+                        pattern += char;
+                    }
+                    document.getElementById("res").innerHTML+=pattern+"<br>"
+                }
+            }
+            add();
+            let n=5
+            let string=" "
+            for(let i=1;i<=n;i++){
+                for(let j=1;j<=n-i;j++)
+                {
+                    string+=" ";
+                }
+                for(let k=0;k<2*i-1;k++)
+                {
+                    string+="*";
+                }
+                string+="\n"
+             
+            }
+           console.log(string)
+
+        </script>
+    </body>
+</html>

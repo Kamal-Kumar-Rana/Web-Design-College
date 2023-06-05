@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #res{
+            padding: 20px;
+            width:400px;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-size:100px;
+           color:dimgrey;
+        }
+    </style>
+    <div id="res"></div>
+    <script>
+        function time(){
+            var d= new Date();
+            var h=d.getHours();
+            var m=d.getMinutes();
+            var s=d.getSeconds();
+            h=h%12;
+            h=h?h:12
+            m=(m<10)?("0"+m):m;
+            s=(s<10)?("0"+s):s;
+            document.getElementById('res').innerHTML=h+":"+m+":"+s;
+            setTimeout(time,1000)
+
+        }
+        time();
+    </script>
+</body>
+</html>

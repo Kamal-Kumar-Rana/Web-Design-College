@@ -56,7 +56,7 @@
 			var elements = input.split(",");
          
 			
-            elements.sort();
+            elements.sort((a,b)=>a-b);
            
 			var output= document.getElementById("output")
             output.innerHTML="[ "+elements+ " ]";

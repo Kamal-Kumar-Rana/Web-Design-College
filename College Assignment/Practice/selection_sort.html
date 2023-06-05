@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=[],e;
+       
+    var n=prompt("Enter total Element in array:")
+    
+    var flag=0
+    for(var i=1;i<=n;i++){
+      e=prompt("Enter "+i+" element: ")
+      a.push(e)
+    }
+    document.write(a)
+for(let i=1;i<n;i++){
+    var min_index=i
+    for(let j=1+1;j<n;j++){
+        if(a[min_index]>a[j]){
+            min_index=j
+        }
+        temp=a[i]
+        a[i]=a[min_index]
+        a[min_index]=temp
+    }
+}
+document.write(a)
+
+</script>
+</body>
+</html>

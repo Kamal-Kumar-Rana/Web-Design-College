@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[],e;
+       var temp
+    var n=prompt("Enter total Element in array:")
+        var flag=0
+        for(var i=1;i<=n;i++){
+          e=prompt("Enter "+i+" element: ")
+          a.push(e)
+        }
+       
+        for(var i=1;i<n;i++){
+             temp=a[i]
+            j=i-1
+            while(j>=0 && temp<a[j]){
+                a[j+1]=a[j]
+                j=j-1
+            }
+            a[j+1]=temp
+        }
+        document.write(a)
+    </script>
+</body>
+</html>
